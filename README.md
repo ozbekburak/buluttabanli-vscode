@@ -29,22 +29,13 @@ Sunucu hizmetinizi, istediğiniz bir yerden kiralayabilirsiniz. (AWS, Azure, Goo
 
 - [https://www.digitalocean.com](https://www.digitalocean.com) 'a girip üyelik oluşturarak başlayalım.
 - Kullanıcı hesabınızı oluşturup, giriş yaptığınızda bir dashboard ile karşılaşacaksınız.
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#5fe0e558c0254ea0ba6712f629f71146)
-
 - Sol tarafta bulunan "+New Project" 'e tıklayarak istediğiniz isimde bir proje oluşturabilirsiniz. Ben projemiz için, **VSCode-Server-Demo** adını verdim.
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#57ad99e185654a39bdac03244d104ec4)
 
 - Projemiz oluştu, anasayfada görüntüleyebilirsiniz.
 - **Get started with a Droplet**
 butonuna tıklayarak, sunucumuzu oluşturabiliriz.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#07de84d5245344ea841780bb4368259d)
-
 - Create Droplets sayfasında:
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#0e2337049db84819910b87649463038c)
 
 ### Sunucu konfigurasyonunun yapılması
 
@@ -66,17 +57,9 @@ Terminalinizde:
 
 SSH anahtarınızın oluşturulduğu klasöre gittiginizde,  "**id_rsa.pub**" uzantılı bir dosya göreceksiniz. İçeriğini, herhangi bir metin düzenleyici ile açıp kopyalamalısınız.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#d202b0abb0ae4a3e8aaa95157db2a0f2)
-
 Daha sonra New SSH Key ' e tıkladığınızda, kopyaladığınız içeriği SSH content kısmına yapıştırabilirsiniz. Ben isim olarak **vscode-sshkey** verdim, siz dilediğiniz ismi verebilirsiniz.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#16805d4212054eefa4bf3def5aa5a809)
-
 1 dakikadan az bir süre sonra sunucunuz ayağa kalkmış hale geliyor.
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#46db747cf52642b6ad7045c8ac5760d9)
-
-> Not: Daha doğru anlaşılması için, ekran görüntülerinde karalamalar yapmak istemedim. Oluşturduğum sunucuyu, demo'dan sonra kaldırdım.
 
 ### Sunucuya bağlantının yapılması
 
@@ -88,8 +71,6 @@ Artık terminalden
 
 Şöyle bir ekranla karşılaşmanız gerekmekte: 
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#74a76c1d79e8421e8e9e6532be1ad1ae)
-
 Sunucumuza bağlandık, sırada code-server binaryilerimizi indirip, geliştirme ortamımızı ayağa kaldırmakta.
 
 ### Geliştirme ortamının çalışabilir hale gelmesi
@@ -98,13 +79,9 @@ Sunucumuza bağlandık, sırada code-server binaryilerimizi indirip, geliştirme
 
     wget {code-server1.604-vsc1.32.0-linux-x64.tar.gz}
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#967cfa72007b4a789cdcf80228173722)
-
     ls
 
  yazarak kontrol edelim.
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#462111a2410d496d93fd05b0c338b859)
 
 Dosyamızın indirmesi başarıyla tamamlandı, aşağıdaki komutu kullanarak tar'dan çıkarabiliriz.
 
@@ -126,11 +103,7 @@ Daha sonra ana dizinimizde proje oluşturarak, code-server'ımızı başlatabili
 
 Uzayıp giden bir ekranla karşılaşacaksınız, aşağıda ekran görüntüsünü verdiğim kısım, kullanacağımız port adresi.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#689caf93b8954ff39a9f7d374a10aa5b)
-
 TLS/SSL sertifikamız olmadığı için,
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#3ca871f0bc9d4482a5c9dcdc0fefec80)
 
 > No certificate specified. Documentation on securing....
 
@@ -142,21 +115,13 @@ Daha sonra, sunucu IP adresimiz ile birlikte, belirtilen port'la web tarayıcım
 
 aşağıdaki ekran görüntüsünde de görebileceğiniz gibi, bağlantınızın güvenli olmadığına dair bir uyarı alacaksınız.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#07bf685dd4e848028e910d31be2b0ed8)
-
 Şu an için bunu ihmal edelim ve **Advanced→Proceed to {ip_adresi}(unsafe)** diyerek devam edelim.
 
 Sunucu parolası girmemizi isteyecek, terminalimizde code-server çalıştırdığımızda bize bunu da sağladı, oraya gidip **Password:**  yazan kısmı bularak, parolamız ile giriş yapabiliriz.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#d9cc334dfb73404cade8d1993acbe93f)
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#93a574f57d4441759578a1ddef8aa65b)
-
 Evet bu kadar! 
 
 Tarayıcı üzerinde geliştirmenizi yapabilirsiniz. 
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#9c2af8525bce4cdb9c7c934fd9a7ed14)
 
 > TLS/SSL sertifikasını oluşturup, bağlantı uyarısı almak istemeyen arkadaşlar, okumaya devam edebilirler.
 
@@ -180,9 +145,8 @@ Adımları takip ederek sertifikanızı oluşturabilirsiniz, bu sayfadan ayrılm
     cd ~/vcode-demo
     code-server --cert=/root/sertifika/MyCertificate.crt --cert-key=/root/sertifika/MyKey.key
 
-Aşağıda da görebileceğiniz gibi, sertifika uyarısı almıyoruz artık.
+Sertifika uyarısı almıyoruz artık.
 
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#7e900d15314847628526da87454f4c37)
 
 Ancak tarayıcınızı açtığınızda, yine bağlantınızın güvenli olmadığına dair bir uyarı alacaksınız. 
 
@@ -191,8 +155,6 @@ Bunu engellemek için (firefox):
 - Preferences → Privacy and Security → Certificates →View Certificates → Servers → Add Exception
 
 kısmına sunucunuzun ip adresini ve port'unu girip **Get Certificate** dedikten sonra, Confirm Security Exception diyerek işlemi tamamlayabilirsiniz.
-
-[](https://www.notion.so/8b8c60f0194144289165c2ed4c536c6b#1b6707b3990d4ad586a1ef24ee9ca3af)
 
 > VSCode sunucunuza bağlandığınızda, güvenlik uyarısı almadan direk giriş ekranı sizi karşılayacak!
 

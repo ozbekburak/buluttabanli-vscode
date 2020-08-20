@@ -4,8 +4,6 @@ Merhabalar, yakın zamanda [https://coder.com/](https://coder.com/)  "code-serve
 
 Ben de, digitalocean üzerinde basit bir sunucu kiralayarak, bu geliştirme ortamını nasıl kurabileceğiniz konusunda sizlere yardımcı olmaya çalışacağım.
 
-Aynı yazı, medium sayfamda ekran görüntüleri ile daha ayrıntılı ele alınmıştır. İncelemek isteyenler için :
-[Medium Linki](https://medium.com/@kaanburakozbek/bulut-tabanl%C4%B1-vscode-d6949426bf2d)
 
 ## Neden?
 
